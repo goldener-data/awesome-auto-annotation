@@ -22,11 +22,14 @@ The information is split by data type (image, text, video, sound, ...) and each 
     to annotate images (local or cloud)
 * [mailcorahul/auto_labeler](https://github.com/mailcorahul/auto_labeler): CLI tools allowing to leverage different
     foundation models to generate annotations on local data
+* [autodistill/autodistill](https://github.com/autodistill/autodistill): Locally annotate from a foundation model and train
+    a specific model on top of it.
 
 ### annotation tools
 
 * [CVAT Automatic Labeling](https://github.com/cvat-ai/cvat?tab=readme-ov-file#deep-learning-serverless-functions-for-automatic-labeling)
 * [Label Studio Auto Annotation](https://labelstud.io/guide/labeling#Perform-ML-assisted-labeling-with-interactive-preannotations)
+* [Anylabeling](https://github.com/vietanhdev/anylabeling)
 
 ## private tools
 
@@ -42,14 +45,16 @@ The information is split by data type (image, text, video, sound, ...) and each 
 * [Google Image Labeling](https://developers.google.com/ml-kit/vision/image-labeling)
 * [Unitlab Auto Data Labeling](https://unitlab.ai/en/data-annotation)
 * [Lightly AutoLabeling](https://www.lightly.ai/autolabeling)
-
-### free
-
-### licence based
+* [Landing AI Label Assist](https://support.landing.ai/docs/label-assist)
+* [V7 Go](https://www.v7labs.com/go)
 
 ## scientific publications
 
+### Medical application
 
+* Kim, D., Chung, J., Choi, J., Succi, M. D., Conklin, J., Longo, M. G. F., ... & Do, S. (2022). 
+    [Accurate auto-labeling of chest X-ray images based on quantitative similarity to an explainable AI model](https://www.nature.com/articles/s41467-022-29437-8). 
+    Nature communications, 13(1), 1867.
 
 
 
