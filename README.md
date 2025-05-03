@@ -24,6 +24,8 @@ The information is split by data type (image, text, video, sound, ...) and each 
     foundation models to generate annotations on local data
 * [autodistill/autodistill](https://github.com/autodistill/autodistill): Locally annotate from a foundation model and train
     a specific model on top of it.
+* [ultralytics/ultralytics](https://docs.ultralytics.com/models/sam-2/#sam-2-comparison-vs-yolo): Auto annotate from Segment Anything
+    Model (SAM) applied to Yolo detections.
 
 ### annotation tools
 
@@ -47,6 +49,11 @@ The information is split by data type (image, text, video, sound, ...) and each 
 * [Lightly AutoLabeling](https://www.lightly.ai/autolabeling)
 * [Landing AI Label Assist](https://support.landing.ai/docs/label-assist)
 * [V7 Go](https://www.v7labs.com/go)
+* [Sentisight AI assisted image labelling](https://www.sentisight.ai/ai-assisted-image-labeling/)
+* [CloudFactory Automated Labeling](https://wiki.cloudfactory.com/docs/userdocs/projects/creating-and-editing-a-project/automated-labeling)
+* [Clarifai Automated Data Labeling](https://docs.clarifai.com/guide/auto-labeling)
+* [Samsung SDS AutoLabel](https://www.samsungsds.com/us/autolabel/autolabel.html)
+* [TrainYolo](https://www.trainyolo.com/)
 
 ## scientific publications
 
