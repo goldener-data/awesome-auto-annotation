@@ -4,14 +4,14 @@ When training a new AI pipeline, the annotation process can be painful and quite
 it is one of the main bottleneck in the release of impactful AI pipelines. Then, leveraging existing AI pipelines to 
 automatically generate new annotations is a way to accelerate this process.
 
-This repository is aiming to provide a curated list of existing resources demonstrating automatic data labeling. 
+This repository is aiming to provide a curated list of existing resources demonstrating automatic data labeling/annotation. 
 The information is split by data type (image, text, video, sound, ...) and each of this type is split between:
 * list of public repositories
 * list of private tools
 * list of scientific publications
 
-Warning, our intent here is to provide a list of sources claiming to be able to automatically generate annotations.
-Not all of these sources have been tested/verified and there is no guarantee that the claim of the authors are valid.
+Warning, the intent here is to provide a list of sources claiming to use/implement auto labeling/annotation.
+Not all of these sources have been tested/verified and there is no guarantee that the expressed claims are valid.
 
 # image-auto-annotation
 
@@ -58,6 +58,7 @@ Not all of these sources have been tested/verified and there is no guarantee tha
 * [Ashish-Yallapragada/AI_AssistedImageSegmentation](https://github.com/Ashish-Yallapragada/AI_AssistedImageSegmentation): User interface designed to help the annotation of zebrafish images.
 * [ParthShethSK/LabelPal](https://github.com/ParthShethSK/LabelPal): user interface allowing to generate annotations from specific tensorflow models (coco-ssd).
 * [ksugar/qupath-extension-sam](https://github.com/ksugar/qupath-extension-sam?tab=readme-ov-file): Use SAM to label medical images in QuPath.
+* [Neural-Symbolic-Image-Labeling/HEPHA](https://github.com/Neural-Symbolic-Image-Labeling/HEPHA): User interface designed to make active learning from already existing image level annotations.
 
 ## private tools
 
@@ -102,12 +103,27 @@ Not all of these sources have been tested/verified and there is no guarantee tha
 * Mots'oehli, Moseli. 
     [Assistive Image Annotation Systems with Deep Learning and Natural Language Capabilities: A Review.](https://arxiv.org/html/2407.00252v1)
     2024 International Conference on Emerging Trends in Networks and Computer Communications (ETNCC). IEEE, 2024.
+* Zhuravlyov, A. K., et al.
+    [Automatic Annotation of Training Datasets in Computer Vision Using Machine Learning Methods.](https://link.springer.com/article/10.3103/S0005105525700347) 
+    Automatic Documentation and Mathematical Linguistics 58.Suppl 5 (2024): S279-S282.
 
 ### General application
 
+* Zhou, Shiyuan, et al. 
+    [HEPHA: A Mixed-Initiative Image Labeling Tool for Specialized Domains.](https://dl.acm.org/doi/full/10.1145/3708359.3712072)
+    Proceedings of the 30th International Conference on Intelligent User Interfaces. 2025.
+* Adsule, Aniket, et al. 
+    [SiamALNet: A Semi-supervised Siamese Neural Network with Active Learning Approach for Auto-Labeling.](https://link.springer.com/chapter/10.1007/978-981-97-4496-1_20)
+    World Conference on Artificial Intelligence: Advances and Applications. Singapore: Springer Nature Singapore, 2024.
 * Toubal, Imad Eddine, et al. 
     [Modeling collaborator: Enabling subjective vision classification with minimal human effort via llm tool-use.](https://openaccess.thecvf.com/content/CVPR2024/html/Toubal_Modeling_Collaborator_Enabling_Subjective_Vision_Classification_With_Minimal_Human_Effort_CVPR_2024_paper.html)
     Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
+* Vishwakarma, Harit, et al. 
+    [Pearls from pebbles: Improved confidence functions for auto-labeling.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/1d051fb631f104cb2a621451f37676b9-Abstract-Conference.html) 
+    Advances in Neural Information Processing Systems 37 (2024): 15983-16015.
+* Zou, Xueyan, et al.
+    [Segment everything everywhere all at once.](https://proceedings.neurips.cc/paper_files/paper/2023/hash/3ef61f7e4afacf9a2c5b71c726172b86-Abstract-Conference.html)
+    Advances in neural information processing systems 36 (2023): 19769-19782.
 
 ### Multimodal application
 
@@ -117,12 +133,15 @@ Not all of these sources have been tested/verified and there is no guarantee tha
 * Gallagher, James E.,et al. 
     [A Multispectral Automated Transfer Technique (MATT) for machine-driven image labeling utilizing the Segment Anything Model (SAM).] (https://ieeexplore.ieee.org/abstract/document/10815733)
     IEEE Access (2024).
+* Sun, Botao. 
+    [Autolabeling & Semantic Segmentation with 4D Radar Tensors.](https://repository.tudelft.nl/record/uuid:f01462b1-0446-481e-9333-9b8d3a488f14) 
+    Master thesis (2024).
 
 ### Medical application
 
-* Kim, Doyun, et al. 
-    [Accurate auto-labeling of chest X-ray images based on quantitative similarity to an explainable AI model.](https://www.nature.com/articles/s41467-022-29437-8). 
-    Nature communications 13.1 (2022): 1867.
+* Cazzaniga, Giorgio, et al. 
+    [Improving the annotation process in computational pathology: A pilot study with manual and semi-automated approaches on consumer and medical grade devices.](https://link.springer.com/article/10.1007/s10278-024-01248-x)
+    Journal of Imaging Informatics in Medicine 38.2 (2025): 1112-1119.
 * Diaz-Pinto, Andres, et al. 
     [Monai label: A framework for ai-assisted interactive labeling of 3d medical images.](https://www.sciencedirect.com/science/article/abs/pii/S1361841524001324)
     Medical Image Analysis 95 (2024): 103207.
@@ -132,25 +151,55 @@ Not all of these sources have been tested/verified and there is no guarantee tha
 * He, Chunming, et al. 
     [Weakly-supervised concealed object segmentation with sam-based pseudo labeling and multi-scale feature grouping.](https://proceedings.neurips.cc/paper_files/paper/2023/hash/61aa557643ae8709b6a4f41140b2234a-Abstract-Conference.html)
     Advances in Neural Information Processing Systems 36 (2023): 30726-30737.
-* Cazzaniga, Giorgio, et al. 
-    [Improving the annotation process in computational pathology: A pilot study with manual and semi-automated approaches on consumer and medical grade devices.](https://link.springer.com/article/10.1007/s10278-024-01248-x)
-    Journal of Imaging Informatics in Medicine 38.2 (2025): 1112-1119.
+* Kim, Doyun, et al. 
+    [Accurate auto-labeling of chest X-ray images based on quantitative similarity to an explainable AI model.](https://www.nature.com/articles/s41467-022-29437-8). 
+    Nature communications 13.1 (2022): 1867.
 
+### Autonomous driving application
 
-### Environmental monitoring application
+* Liang, Mingfu, et al.
+    [Aide: An automatic data engine for object detection in autonomous driving.](https://openaccess.thecvf.com/content/CVPR2024/html/Liang_AIDE_An_Automatic_Data_Engine_for_Object_Detection_in_Autonomous_CVPR_2024_paper.html)
+    Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.
+* Alamikkotervo, Eerik, et al.
+    [TADAP: Trajectory-Aided Drivable area Auto-labeling with Pretrained self-supervised features in winter driving conditions.](https://ieeexplore.ieee.org/abstract/document/10521863) 
+    IEEE Transactions on Intelligent Vehicles (2024).
+
+### Biological application
+
+* Bist, Ramesh Bahadur, et al.
+    [Efficient auto-labeling of large-scale poultry datasets (ALPD) using an ensemble model with self-and active-learning approaches.](https://arxiv.org/abs/2501.10809)
+    arXiv preprint arXiv:2501.10809 (2025).
+* Yang, Chen, et al.
+    [Annolid: Annotate, Segment, and Track Anything You Need.](https://arxiv.org/abs/2403.18690) 
+    arXiv preprint arXiv:2403.18690 (2024).
 * Zurowietz, Martin, et al. 
     [MAIA—A machine learning assisted image annotation method for environmental monitoring and exploration.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207498)
     PloS one 13.11 (2018): e0207498.
 
-### Remote sensing application
+### Infrastructure monitoring application
 
 * Zhang, Song, et al. 
     [Alps: An auto-labeling and pre-training scheme for remote sensing segmentation with segment anything model.](https://ieeexplore.ieee.org/abstract/document/10949707) 
     IEEE Transactions on Image Processing (2025).
+* Schlonsak, Ruben et al.
+    [Bridge Detection in Autonomous Shipping: A YOLOv8 Approach with Autodistill and GroundedSAM.](https://iopscience.iop.org/article/10.1088/1742-6596/2867/1/012019/meta)
+    Journal of Physics: Conference Series. Vol. 2867. No. 1. IOP Publishing, 2024.
+
+### consumer goods application
+
+* Matuzevičius, Dalius.
+    [A Retrospective Analysis of Automated Image Labeling for Eyewear Detection Using Zero-Shot Object Detectors.](https://www.mdpi.com/2079-9292/13/23/4763)
+    Electronics 13.23 (2024): 4763.
+
+### Industrial application
+
+* Fan, Shu-Kai S., et al.
+    [Auto-Labeling for Pattern Recognition of Wafer Defect Maps in Semiconductor Manufacturing.](https://asmedigitalcollection.asme.org/manufacturingscience/article-abstract/146/7/070904/1198725/Auto-Labeling-for-Pattern-Recognition-of-Wafer?redirectedFrom=fulltext) 
+    Journal of Manufacturing Science and Engineering 146.7 (2024).
 
 ## Deprecated repositories
 
-In this section, we are listing code repositories with less than 1 year activity.
+This section is listing some code repositories with less than 1 year activity.
 
 * [virajmavani/semi-auto-image-annotation-tool](https://github.com/virajmavani/semi-auto-image-annotation-tool)
 * [mdhmz1/Auto-Annotate](https://github.com/mdhmz1/Auto-Annotate)
